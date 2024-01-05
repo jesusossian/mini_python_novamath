@@ -1,2 +1,2 @@
-# python_nova_math
+# mini python
 Short course python at Nova Math
