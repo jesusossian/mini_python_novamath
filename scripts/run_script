@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for tam in 100
+do
+    for dens in 25
+    do
+	for id in 1
+	do
+	    python3 qknapsack.py instances/${tam}/${tam}_${dens}_${id}.txt
+	done
+    done
+done

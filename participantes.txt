@@ -1,0 +1,83 @@
+cmac@fct.unl.pt,
+amc@fct.unl.pt,
+facc@fct.unl.pt,
+algb@fct.unl.pt,
+jpbc@fct.unl.pt,
+amo@fct.unl.pt,
+ejo.silva@campus.fct.unl.pt,
+msjr@fct.unl.pt,
+mac.valente@campus.fct.unl.pt,
+caf@fct.unl.pt,
+lll@fct.unl.pt,
+amf@fct.unl.pt,
+mfvm@fct.unl.pt,
+sandra.maria.simoes@gmail.com,
+mrff@fct.unl.pt,
+i.akoto@campus.fct.unl.pt,
+mirg@fct.unl.pt,
+gmsg@fct.unl.pt,
+rrc@fct.unl.pt,
+efnm@fct.unl.pt,
+cls@fct.unl.pt,
+cpsd@ipportalegre.pt,
+mb@fct.unl.pt,
+vhf@fct.unl.pt,
+icn@fct.unl.pt,
+mrj@fct.unl.pt,
+mfsr@fct.unl.pt,
+fac@fct.unl.pt,
+vmml@fct.unl.pt,
+mslordelo@uefs.br,
+amfr@fct.unl.pt,
+mcs@fct.unl.pt,
+iola.pinto@isel.pt,
+fjm@fct.unl.pt,
+jaduvilla25@gmail.com,
+cmm.iscal@gmail.com,
+ec@fct.unl.pt,
+tf.neves@campus.fct.unl.pt,
+ac.gouveia@campus.fct.unl.pt,
+mmo.pinto@campus.fct.unl.pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+cmac@fct.unl.pt	- Carlos A. Coelho
+amc@fct.unl.pt	- Ana Cristina Casimiro
+facc@fct.unl.pt	- Fabio Chalub
+algb@fct.unl.pt	- Ana Luísa Custódio
+jpbc@fct.unl.pt	- Joao Pedro Bizarro Cabral
+amo@fct.unl.pt	- António Manuel Morais Fernandes de Oliveira
+ejo.silva@campus.fct.unl.pt	- Everton Silva
+msjr@fct.unl.pt	- Magda Rebelo
+mac.valente@campus.fct.unl.pt - Márcio Valente
+caf@fct.unl.pt - Cláudio Fernandes
+lll@fct.unl.pt - Lídia Lourenço
+amf@fct.unl.pt - Ayana Mateus
+mfvm@fct.unl.pt - Maria de Fátima Varregoso Miguens
+sandra.maria.simoes@gmail.com - Sandra Oliveira
+mrff@fct.unl.pt	- Rosário Fernandes
+i.akoto@campus.fct.unl.pt - Isaac Akoto
+mirg@fct.unl.pt	- Isabel Gomes
+gmsg@fct.unl.pt	- Graca Goncalves
+rrc@fct.unl.pt - Rui Cardoso
+efnm@fct.unl.pt	- Elsa Moreira
+cls@fct.unl.pt - Carlos Manuel Saiago
+cpsd@ipportalegre.pt - Cristina Paula da Silva Dias
+mb@fct.unl.pt - Carmo Brás
+vhf@fct.unl.pt - Vítor
+icn@fct.unl.pt - Isabel Natario
+mrj@fct.unl.pt - Manuel Messias Rocha de Jesus
+mfsr@fct.unl.pt	- Fátima Rodrigues
+fac@fct.unl.pt - Frederico Caeiro
+vmml@fct.unl.pt	- Vanda Lourenco
+mslordelo@uefs.br - Maurício Lordêlo
+amfr@fct.unl.pt	- Ana Ribeiro
+mcs@fct.unl.pt - Maria do Céu Soares
+ iola.pinto@isel.pt	- Iola Pinto
+fjm@fct.unl.pt - Filipe Marques
+jaduvilla25@gmail.com - Javier Villa
+cmm.iscal@gmail.com	- Carla Martinho
+ec@fct.unl.pt - ELVIRA COIMBRA
+tf.neves@campus.fct.unl.pt	- Tiago Neves
+ac.gouveia@campus.fct.unl.pt - Ana Carlota Nóbrega de Gouveia
+mmo.pinto@campus.fct.unl.pt	- Mafalda Pinto
