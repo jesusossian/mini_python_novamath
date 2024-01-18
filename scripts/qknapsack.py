@@ -3,8 +3,12 @@ import numpy as np
 import gurobipy as gp
 from gurobipy import GRB
 
-def qknapsack(datafile):
-    with open(datafile, 'r') as file: linhas = file.readlines()
+from pathlib import Path
+import os
+
+def qknapsack(instance):
+
+    with open(instance, 'r') as file: linhas = file.readlines()
 
     # remove linha vazia inicial e elimina os "\n" de cada linha
     linhas = [a.strip() for a in linhas] 
@@ -36,11 +40,18 @@ def qknapsack(datafile):
     w = np.fromstring(linhas[n+3], dtype=int, sep = ' ') 
 
     #cria o modelo
-    m = gp.Model("qknapsack") 
+    model = gp.Model("qkp01") 
 
     x = []
     for j in range(0, n):
-        x.append(m.addVar(vtype=GRB.BINARY,name="x_{}".format(j+1)))
+        x.append(model.addVar(vtype=GRB.BINARY, name="x_{}".format(j+1)))
+        
+    model.Params.TimeLimit = 600
+    model.Params.MIPGap = 1.e-6
+    model.Params.Threads = 1
+    
+    # Turn off display
+    #gp.setParam('OutputFlag', 0)
 
     obj = 0 
     for i in range(0, n):
@@ -48,26 +59,53 @@ def qknapsack(datafile):
         for j in range(i+1, n):
             obj += p[i][j] * x[i] * x[j]
 
-    m.setObjective(obj, GRB.MAXIMIZE)
+    model.setObjective(obj, GRB.MAXIMIZE)
 
     constr = 0
     for j in range(0, n):
         constr += (w[j] * x[j])
-    m.addConstr(constr <= c)
+    model.addConstr(constr <= c)
 
-    #m.write("qknapsack.lp")
+    #model.write("qkp01.lp")
 
-    m.optimize()
+    model.optimize()
+    
+    status = 0
+    if model.status == GRB.OPTIMAL:
+        status = 1
+ 
+    lb = model.objBound
+    ub = model.objVal
+    gap = model.MIPGap
+    time = model.Runtime
+    nodes = model.NodeCount
+
+    model.dispose()
 
     #time, lower bound, upper bound, gap, qtd nodes
-    print('Obj: %g' % obj.getValue())
+    #print('Obj: %g' % obj.getValue())
+    
+    arquivo = open('result.csv','a')
+    arquivo.write(
+        str(instance)+';'
+        +str(round(lb,1))+';'
+        +str(round(ub,1))+';'
+        +str(round(gap,2))+';'
+        +str(round(time,2))+';'
+        +str(round(nodes,1))+';'
+        +str(round(status,1))+'\n'
+    )
+    arquivo.close()
+
 
 if __name__ == "__main__":
-    datafile = "instances/100/100_25_1.txt"
 
+	#result_path = Path(f"result/{inst_}")
+	
     if len(sys.argv) < 2:
-        print("Default data file : " + datafile)
+        instance = "instances/100/100_25_1.txt"
+        print("Default data file : " + instance)
     else:
-        datafile = sys.argv[1]
+        instance = sys.argv[1]
 
-    qknapsack(datafile)
+    qknapsack(instance)
