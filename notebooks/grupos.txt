@@ -1,4 +1,0 @@
-algebra e logic
-analysis
-operations research
-statistics and risk management
