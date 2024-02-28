@@ -1,5 +1,5 @@
-# mini python
-Short course python at Nova Math
+# python tutorial
+
 
 Tópicos (slides)
 1. O que é Python?
